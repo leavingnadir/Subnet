@@ -619,13 +619,13 @@ nav input{
 }
 
 /*=====================================================
-=========== HERO SECTION       ========================
+=========== SHIPPING POCLIY HERO SECTION===============
 ======================================================*/
 
 .Shopping-Policy-hero {
   width: 100%;
   height: 80vh;
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  background: url('../images/heros/shipping-hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1043,5 +1043,128 @@ input[type="submit"]:hover {
 
   .footer__nav {
     flex: 2 0px;
+  }
+}
+
+/*=====================================================
+=========== SIZE CHART  HERO SECTION===============
+======================================================*/
+
+.size-chart-hero {
+  width: 100%;
+  height: 80vh;
+  background: url('../images/heros/size-chart-hreo.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.size-chart-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.size-chart-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.size-chart-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: 'Cosmic';
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .size-chart-hero-content h1 {
+      font-size: 2.2rem;
+  }
+
+  .size-chart-hero-content p {
+      font-size: 1rem;
+  }
+}
+
+/*=====================================================
+=========== SIZE CHART ================================
+======================================================*/
+
+.size-chart {
+  color: var(--white);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.size-chart h2 {
+  font-size: 3rem;
+  font-family: 'Cosmic';
+  color: var(--white);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: var(--light-purple);
+  display: inline-block;
+}
+
+.crop-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.crop-image img {
+  width: 70%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+.size-table {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 90%;
+  max-width: 900px;
+  border-collapse: collapse;
+}
+
+.size-table th, .size-table td {
+  font-family: 'Cosmic';
+  border: 2px solid rgba(255, 255, 255, 0.158);
+}
+
+.size-table th {
+  font-family: 'Cosmic';
+  letter-spacing: 1px;
+  padding: 20px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.size-table td {
+  font-family: 'Lucida Sans';
+  color: var(--white);
+  font-size: 1rem;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .crop-image img {
+      width: 90%;
+      max-height: 60vh;
   }
 }
