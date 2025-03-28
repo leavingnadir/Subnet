@@ -1168,3 +1168,53 @@ table {
       max-height: 60vh;
   }
 }
+
+/*=====================================================
+=========== REFUND POLICY HERO SECTION===============
+======================================================*/
+
+.Refund-Policy-hero {
+  width: 100%;
+  height: 80vh;
+  background: url('../images/heros/refund-hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.Refund-Policy-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.Refund-Policy-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.Refund-Policy-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: 'Cosmic';
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .Refund-Policy-hero-content h1 {
+      font-size: 2.2rem;
+  }
+
+  .Refund-Policy-hero-content p {
+      font-size: 1rem;
+  }
+}
