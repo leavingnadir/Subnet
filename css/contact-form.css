@@ -1,0 +1,131 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Top Info Bar */
+.contact-info-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.info-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  color: #555;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #30cfd0;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Contact Card */
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side: Form */
+.contact-form {
+  flex: 1;
+  padding: 40px;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #30cfd0;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Right Side: Image */
+.contact-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

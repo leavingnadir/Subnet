@@ -774,7 +774,7 @@ nav input{
 .accordion-link i{
   color: #e7d5ff;
   padding: .5rem;
-  
+
 }
 
 .accordion-link ul{
@@ -1521,5 +1521,55 @@ table {
       width: 120px;
       height: 120px;
       font-size: 12px;
+  }
+}
+
+/*=====================================================
+=========== CONTACT US HERO SECTION====================
+======================================================*/
+
+.contact-us-hero {
+  width: 100%;
+  height: 80vh;
+  background: url('../images/heros/contact-us-hero.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.contact-us-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-us-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.contact-us-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: 'Cosmic';
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .contact-us-hero-content h1 {
+      font-size: 2.2rem;
+  }
+
+  .contact-us-hero-content p {
+      font-size: 1rem;
   }
 }
