@@ -917,7 +917,7 @@ nav input {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  border: 1px solid var(--white);
+  margin-top: 160px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
