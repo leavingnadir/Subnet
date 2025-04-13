@@ -2534,3 +2534,204 @@ table {
 .partner-logo:hover {
   background-color: var(--light-purple);
 }
+
+/*=====================================================
+=========== HOODIE PRODUCT SECTION====================
+======================================================*/
+
+.product-reveal {
+  background-color: var(--black);
+  padding: 6em 2em 0 2em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-y: hidden;
+  margin-bottom: 100px;
+}
+
+.product-hoodie {
+  position: relative;
+}
+
+.product-hoodie img {
+  width: 80vw;
+  max-width: 600px;
+  animation: fadeUp 0.8s ease-out forwards;
+  animation-delay: 500ms;
+}
+
+.spec {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  animation: fadeIn 0.3s linear forwards 1.3s;
+}
+
+.spec-text {
+  position: absolute;
+  color: var(--white);
+  border: 1px var(--white) solid;
+  padding: 0.5em;
+  border-radius: 8px;
+  animation: flicker 0.3s linear forwards 1.8s;
+}
+
+.spec::before,
+.spec::after {
+  content: "";
+  position: absolute;
+  background: var(--white);
+  height: 1px;
+  top: 50%;
+}
+
+.spec::after {
+  animation: flicker 0.3s linear forwards 1.7s;
+}
+/*
+.spec small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  border-radius: 50%;
+  animation: pulse 0.7s linear infinite, fadeIn 0.3s linear forwards 1.3s;
+}*/
+
+.spec1 {
+  top: 13%;
+  right: 25%;
+}
+
+.spec1::before {
+  width: 7em;
+  left: 0;
+}
+
+.spec1::after {
+  left: 7em;
+  width: 3.5em;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+}
+
+.spec1 .spec-text {
+  top: -3.9em;
+  right: -16em;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.spec2 {
+  top: 40%;
+  left: 35%;
+}
+
+.spec2::before {
+  width: 15em;
+  right: 10px;
+}
+
+.spec2::after {
+  left: -17em;
+  width: 3.5em;
+  top: -30px;
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}
+
+.spec2 .spec-text {
+  top: -6.8em;
+  right: 15em;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.spec3 {
+  top: 70%;
+  left: 75%;
+}
+
+.spec3::before {
+  width: 15em;
+  right: -230px;
+}
+
+.spec3::after {
+  left: 15.4em;
+  width: 3.5em;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+}
+
+.spec3 .spec-text {
+  top: -3.9em;
+  right: -25em;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1270px) {
+  .product-reveal {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/*=====================================================
+=========== LIMITED DROP HERO SECTION====================
+======================================================*/
+
+.shop-hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../images/heros/drops-hero.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.shop-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.shop-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.shop-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Cosmic";
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .shop-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .shop-hero-content p {
+    font-size: 1rem;
+  }
+}
