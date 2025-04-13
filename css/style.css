@@ -61,6 +61,7 @@ body::before {
 	z-index: -1;
 }*/
 
+body,
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -2051,4 +2052,485 @@ table {
   .drop2-section-content p {
     font-size: 10px;
   }
+}
+
+/*=====================================================
+=========== DROPS JOURNEY UNI SECTION====================
+======================================================*/
+.journey-section {
+  padding: 5vw 7vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.journey-section .mosthara-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+  margin: 60px;
+}
+
+.journey-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--light-purple);
+  font-family: "Cosmic";
+}
+
+.journey-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  color: var(--white);
+  font-family: "Courier New", Courier, monospace;
+  align-items: center;
+  text-align: center;
+}
+
+.journey-texts .hero-btn {
+  align-items: center;
+}
+
+.journey-texts p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.journey-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.journey-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.journey-gallery img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .journey-heading {
+    font-size: 2rem;
+  }
+
+  .journey-texts p {
+    font-size: 1rem;
+  }
+}
+
+/*=====================================================
+=========== MOSTHARA DROP HERO SECTION====================
+======================================================*/
+
+.mosthara-hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../images/heros/drops-hero.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.mosthara-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mosthara-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.mosthara-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Cosmic";
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .mosthara-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .mosthara-hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/*=====================================================
+=========== EXCLUSIVE DROP HERO SECTION====================
+======================================================*/
+
+.Exclusive-drops-hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../images/heros/drops-hero.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.Exclusive-drops-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.Exclusive-drops-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.Exclusive-drops-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Cosmic";
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .Exclusive-drops-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .Exclusive-drops-hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/*=====================================================
+=========== ARTS DROP HERO SECTION====================
+======================================================*/
+
+.art-drops-hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../images/heros/drops-hero.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.art-drops-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.art-drops-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.art-drops-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Cosmic";
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .art-drops-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .art-drops-hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/*=====================================================
+=========== LIMITED DROP HERO SECTION====================
+======================================================*/
+
+.limited-edition-drops-hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../images/heros/drops-hero.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.limited-edition-drops-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.limited-edition-drops-hero-content {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+  padding: 20px;
+}
+
+.limited-edition-drops-hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Cosmic";
+  color: var(--white);
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .limited-edition-drops-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .limited-edition-drops-hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/*=====================================================
+=========== TESTIMONIALS GRID SECTION====================
+======================================================*/
+
+.testimonials-heading {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cosmic";
+  font-size: 2.5rem;
+  color: var(--light-purple);
+  margin-top: 100px;
+}
+
+.outerdiv {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  margin-top: -50px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -100px;
+}
+
+.innerdiv {
+  transform: scale(0.9);
+  margin: 1rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-rows: repeat(2, 22rem);
+  grid-template-columns: repeat(4, 17rem);
+}
+
+.eachdiv {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  color: white;
+}
+
+.div1 {
+  background: #733fc8;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-repeat: no-repeat;
+  background-position-x: 25rem;
+}
+
+.div2 {
+  background: #49556b;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.div3 {
+  background: white;
+  grid-column: 4/5;
+  grid-row: 1/3;
+  color: black;
+}
+
+.div4 {
+  background: white;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: black;
+}
+
+.div5 {
+  background: #18202d;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.userdetails {
+  display: flex;
+}
+
+.imgbox {
+  margin-right: 1rem;
+}
+
+.imgbox img {
+  border-radius: 50%;
+  width: 2rem;
+  border: 2px solid #cec5c5;
+}
+
+.detbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detbox p {
+  margin: 0;
+}
+
+.detbox .name {
+  color: hsl(0, 0%, 81%);
+  font-size: 1.2rem;
+  margin-bottom: 0.1rem;
+  font-family: "Nanora";
+  letter-spacing: 1px;
+}
+
+.detbox .name.dark {
+  color: #49505a;
+}
+
+.review h4 {
+  font-size: 1.6rem;
+  color: #f3deff;
+  font-family: "Nanora";
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.review.dark h4 {
+  color: #4b5258;
+}
+
+.review p {
+  font-size: 1rem;
+  color: #f3deff;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1;
+}
+
+.review.dark p {
+  color: #0e0e0e;
+}
+
+@media only screen and (max-width: 1000px) {
+  .innerdiv {
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .innerdiv {
+    transform: scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .div1 {
+    background-position-x: 10rem;
+  }
+  .innerdiv {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    margin: 2rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/*=====================================================
+=========== PARTNERS LOGO SECTION====================
+======================================================*/
+
+.partners-section {
+  padding: 60px 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.partners-heading {
+  color: var(--light-purple);
+  font-size: 2.5rem;
+  font-family: "Cosmic";
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 0; /* no space between logos */
+  justify-content: center; /* center grid if not full row */
+}
+
+.partner-logo {
+  background-color: var(--black);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.9s ease;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(100%) brightness(1.9);
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  background-color: var(--light-purple);
 }
