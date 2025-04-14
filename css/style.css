@@ -714,6 +714,10 @@ nav input {
   opacity: 80%;
 }
 
+.scrolling-content span {
+  font-family: "Cosmic";
+}
+
 @keyframes scrollmarguee {
   from {
     transform: translateX(0%);
